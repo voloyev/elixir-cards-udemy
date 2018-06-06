@@ -1,3 +1,10 @@
+
+
+[![codecov](https://codecov.io/gh/voloyev/elixir-cards-udemy/branch/master/graph/badge.svg)](https://codecov.io/gh/voloyev/elixir-cards-udemy)
+
+
+[![Build Status](https://travis-ci.org/voloyev/elixir-cards-udemy.svg?branch=master)](https://travis-ci.org/voloyev/elixir-cards-udemy)
+
 # Cards
 
 **TODO: Add description**
