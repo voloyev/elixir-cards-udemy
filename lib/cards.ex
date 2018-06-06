@@ -19,6 +19,15 @@ defmodule Cards do
     Enum.shuffle(deck)
   end
 
+  @doc """
+
+  ## Example
+
+      iex> deck = Cards.create_deck()
+      iex> Cards.contains?(deck, "Ace of Spades")
+      true
+
+  """
   def contains?(deck, card) do
     Enum.member?(deck, card)
   end
@@ -26,13 +35,12 @@ defmodule Cards do
   @doc """
   Divide deck into `hand`
 
-  ### Examples
-  
-  ```elixir
-  deck = Cards.create_deck
-  {hand, deck} = Cards.deal(deck, 1)
-  hand #=> ["Ace of Spades"]
-  ```
+  ## Example
+
+      iex> deck = Cards.create_deck()
+      iex> {hand, _deck} = Cards.deal(deck, 1)
+      iex> hand
+      ["Ace of Spades"]
 
   """
   def deal(deck, hand_size) do
@@ -52,7 +60,7 @@ defmodule Cards do
   end
 
   def create_hand(hand_size) do
-    create_deck
+    create_deck()
     |> shuffle
     |> deal(hand_size)
   end
